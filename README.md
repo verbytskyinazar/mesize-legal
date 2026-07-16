@@ -7,19 +7,14 @@ Public legal pages for the **MeSize** mobile app, served with GitHub Pages.
 
 ## Editing
 
-The Markdown files are the source of truth:
+Plain hand-written HTML — no build step:
 
-- `privacy-policy.md`
-- `terms-of-service.md`
+- `index.html`
+- `privacy.html`
+- `terms.html`
 
-After editing, regenerate the HTML (no dependencies needed):
-
-```bash
-node build.mjs
-```
-
-Then commit `*.md` and the rebuilt `*.html`. `build.mjs` is a tiny, dependency-free
-Markdown→HTML converter tailored to these documents.
+Edit the wording directly in the HTML. Shared styling lives in `style.css`
+(one stylesheet linked by every page). Commit the changed files.
 
 ## Contact
 
