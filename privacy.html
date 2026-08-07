@@ -11,57 +11,139 @@
 <div class="container">
 <header><a href="./index.html">Me<span>Size</span></a></header>
 <h1>Privacy Policy</h1>
-<p><strong>App:</strong> MeSize <strong>Last updated:</strong> July 16, 2026</p>
-<p>MeSize ("<strong>MeSize</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>") built the MeSize mobile app (the "<strong>App</strong>") to help you save and organize your own clothing and shoe sizes, body measurements, and a personal catalog of the items you own. This Privacy Policy explains what information the App handles, how it is used, and the choices you have.</p>
-<p>We designed MeSize to be <strong>private by default</strong>: everything you enter stays on your device unless you choose to create an account and turn on cloud backup.</p>
+<p><strong>App:</strong> MeSize <strong>Last updated:</strong> August 8, 2026</p>
+<p>MeSize ("<strong>MeSize</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>") built the MeSize mobile app (the "<strong>App</strong>") to help you save and organize your own clothing and shoe sizes, body measurements, and a personal catalog of the items you own, and to offer optional features such as cloud backup, sharing, and AI virtual try-on. This Privacy Policy explains what information the App handles, how it is used, and the choices you have.</p>
+<p>We designed MeSize to be <strong>private by default</strong>: your sizes, measurements, catalog, wishlist, and most photos stay on your device unless you use a feature that needs the network (for example Premium cloud sync, profile or item sharing, buying credits, or AI try-on).</p>
 <p>MeSize is operated by an independent individual developer based in Poland, not a registered company. Where this document says "we", it refers to that operator (the data controller), who you can reach at the contact address in Section 13.</p>
 <hr>
 <h2>1. Summary</h2>
-<ul><li>The App works <strong>offline-first</strong>. Your sizes, measurements, catalog, and photos are stored <strong>locally on your device</strong> by default.</li><li>Creating an <strong>account</strong> (Sign in with Apple or Google) is <strong>optional</strong> and only needed to back up and sync your data across devices.</li><li>Cloud backup and sync are part of the optional one-time <strong>Premium</strong> purchase.</li><li>We use <strong>no third-party advertising, analytics, or tracking SDKs</strong>. We do <strong>not sell</strong> your personal data and we do <strong>not</strong> use it for advertising.</li><li>You can <strong>delete your account and all cloud data at any time</strong> from within the App.</li></ul>
+<ul>
+<li>The App works <strong>offline-first</strong>. Your sizes, measurements, catalog, wishlist, and try-on history are stored <strong>locally on your device</strong> by default.</li>
+<li>Creating an <strong>Account</strong> (Sign in with Apple or Google) is <strong>optional</strong> and is used to back up and sync your data across devices when you also have <strong>Premium</strong>.</li>
+<li>If you use <strong>AI try-on</strong> or buy <strong>try-on credits</strong>, the App creates a silent technical session (anonymous authentication) so we can run the feature and keep a server-side credit balance. That is <strong>not</strong> the same as signing in with Apple or Google in Settings.</li>
+<li>When you run a try-on, the photos you choose are sent through our backend to a third-party AI provider (<strong>FASHN</strong>) to generate a result image.</li>
+<li>We use <strong>no third-party advertising, analytics, or tracking SDKs</strong>. We do <strong>not sell</strong> your personal data and we do <strong>not</strong> use it for advertising.</li>
+<li>You can <strong>delete your Account and associated cloud backup data</strong> at any time from within the App. Local data is removed when you delete it in the App or uninstall.</li>
+</ul>
 <hr>
 <h2>2. Information We Handle</h2>
 <h3>2.1 Information you provide</h3>
-<ul><li><strong>Size &amp; body profile:</strong> profile name, gender, build type, home country, preferred unit system (cm/in), body measurements you enter (such as chest, waist, foot, head, and finger), and the clothing/shoe sizes you save (US/EU/UK/JP).</li><li><strong>Catalog items:</strong> the items you add, including brand, category, size, notes, and any <strong>photos</strong> you attach.</li><li><strong>Custom categories</strong> you create.</li><li><strong>App preferences:</strong> theme, language, and onboarding status.</li></ul>
-<h3>2.2 Account information (only if you sign in)</h3>
-<ul><li>When you use <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>, we receive a secure identity token and basic profile information — typically your <strong>email address</strong> and, where available, your <strong>name</strong>. If you use Apple's *Hide My Email*, we only ever receive Apple's private relay address.</li><li>We use this to create and authenticate your account and to attach your backup and your Premium entitlement to you.</li></ul>
-<h3>2.3 Purchase information (only if you buy Premium)</h3>
-<ul><li>Premium is a <strong>one-time in-app purchase</strong> processed by the <strong>Apple App Store</strong> or <strong>Google Play</strong>. Your payment is handled entirely by Apple or Google — <strong>we never receive your card or payment details.</strong></li><li>To unlock Premium for your account, we verify your purchase with Apple's App Store Server API or Google's Play Developer API using the transaction identifier or purchase token supplied by the store, and we store a record of whether your account is entitled to Premium.</li></ul>
-<h3>2.4 Information we do <strong>not</strong> collect</h3>
-<ul><li>We do not collect your precise location.</li><li>We do not use advertising identifiers or third-party trackers.</li><li>We do not access your contacts, and we do not scan your photo library beyond the specific photos you choose to attach to catalog items.</li></ul>
+<ul>
+<li><strong>Size &amp; body profile:</strong> profile name, gender, build type, home country, preferred unit system (cm/in), body measurements you enter (such as chest, waist, foot, head, and finger), and the clothing/shoe sizes you save (US/EU/UK/JP).</li>
+<li><strong>Catalog items:</strong> the items you add, including brand, category, size, price text, notes, and any <strong>photos</strong> you attach.</li>
+<li><strong>Wishlist items</strong> (local): name, size, price, store details, notes, and photos you choose to save.</li>
+<li><strong>Custom categories</strong> you create.</li>
+<li><strong>App preferences:</strong> theme, language, and onboarding status.</li>
+<li><strong>Try-on inputs you choose:</strong> a photo of a person and a garment photo (from your catalog or an upload) used only when you start a generate.</li>
+</ul>
+<h3>2.2 Account information (only if you sign in with Apple or Google)</h3>
+<ul>
+<li>When you use <strong>Sign in with Apple</strong> or <strong>Sign in with Google</strong>, we receive a secure identity token and basic profile information — typically your <strong>email address</strong> and, where available, your <strong>name</strong>. If you use Apple's Hide My Email, we only ever receive Apple's private relay address.</li>
+<li>We use this to create and authenticate your Account and to attach your Premium cloud backup and server Premium entitlement to you.</li>
+</ul>
+<h3>2.3 Technical session for try-on and credits</h3>
+<ul>
+<li>To buy try-on credits and to call the try-on backend, the App may create an <strong>anonymous authentication session</strong> with our backend (Supabase). This session is a random technical identifier. It does <strong>not</strong> require your name or email, and it is <strong>not</strong> shown as an Account sign-in in Settings.</li>
+<li>If you later sign in with Apple or Google, we may transfer your try-on credit balance from that anonymous session to your Account so you do not lose purchased credits.</li>
+</ul>
+<h3>2.4 Purchase information</h3>
+<ul>
+<li><strong>Premium</strong> is a one-time (non-consumable) in-app purchase. <strong>Try-on credit packs</strong> are consumable in-app purchases. Both are processed by the <strong>Apple App Store</strong> or <strong>Google Play</strong>. Your payment is handled entirely by Apple or Google — <strong>we never receive your card or payment details.</strong></li>
+<li>To unlock Premium or grant credits, we verify the purchase with Apple's App Store Server API or Google's Play Developer API using the transaction identifier or purchase token supplied by the store.</li>
+<li>For Premium we store whether your Account (or device, for local unlock) is entitled. For credit packs we store a <strong>server-side credit balance</strong> and a ledger of verified purchase transactions (platform, product id, transaction id, credits granted) tied to your technical session or Account — so the same store transaction cannot be granted twice.</li>
+</ul>
+<h3>2.5 AI try-on processing</h3>
+<ul>
+<li>When you tap generate, the App sends the selected person and garment images (processed as compressed images) to our backend, which forwards them to <strong>FASHN</strong> (a third-party virtual try-on provider) to create a result image.</li>
+<li>We debit one try-on credit on our servers when a generate starts; if the generate fails, that credit is refunded to your balance.</li>
+<li>The result image is returned to the App. <strong>Try-on history is stored only on your device</strong> (not uploaded to our cloud backup). We do not use your try-on photos for advertising or to train our own models.</li>
+<li>FASHN processes images under its own terms and privacy practices. Do not use try-on with photos of other people unless you have the right to do so.</li>
+</ul>
+<h3>2.6 Sharing features (optional)</h3>
+<ul>
+<li>If you share a <strong>size profile</strong>, a copy of that profile may be uploaded to our backend and available via a secret link/token for a limited time.</li>
+<li>If you share a <strong>catalog item</strong> or <strong>wishlist</strong> content, the App uses your device’s system share sheet; what leaves the device depends on the app or channel you choose (for example Messages or email).</li>
+</ul>
+<h3>2.7 Information we do <strong>not</strong> collect</h3>
+<ul>
+<li>We do not collect your precise location.</li>
+<li>We do not use advertising identifiers or third-party trackers.</li>
+<li>We do not access your contacts, and we do not scan your photo library beyond the specific photos you choose for catalog, wishlist, or try-on.</li>
+</ul>
 <hr>
 <h2>3. Device Permissions</h2>
-<ul><li><strong>Photo library:</strong> requested only when you attach a photo to a catalog item, so you can pick an image.</li><li><strong>Camera:</strong> requested only if you use camera-based measuring features.</li></ul>
+<ul>
+<li><strong>Photo library:</strong> requested when you pick an image for a catalog item, wishlist item, or try-on (person or clothes).</li>
+<li><strong>Camera:</strong> requested if you take a photo for those features or use camera-based measuring features.</li>
+<li><strong>Files / documents (where offered):</strong> requested if you import an image from files.</li>
+</ul>
 <p>You can change these permissions at any time in your device settings. Denying them only disables the related feature.</p>
 <hr>
 <h2>4. How We Use Information</h2>
 <p>We use the information above to:</p>
-<ul><li>provide the core features of the App (save, display, and organize your sizes, measurements, and catalog);</li><li>authenticate your account and keep your data in sync across your devices (when you sign in with Premium);</li><li>verify and honor your Premium purchase;</li><li>remember your preferences (theme, language);</li><li>respond to your support requests; and</li><li>maintain the security and integrity of the service and comply with law.</li></ul>
+<ul>
+<li>provide the core features of the App (save, display, and organize your sizes, measurements, catalog, and wishlist);</li>
+<li>authenticate your Account and keep your data in sync across your devices (when you sign in with Premium);</li>
+<li>verify and honor Premium and try-on credit purchases, and maintain your credit balance;</li>
+<li>run AI try-on generates you request (including sending images to FASHN via our backend);</li>
+<li>enable optional sharing you choose to start;</li>
+<li>remember your preferences (theme, language);</li>
+<li>respond to your support requests; and</li>
+<li>maintain the security and integrity of the service and comply with law.</li>
+</ul>
 <p>We do <strong>not</strong> use your information for advertising or profiling, and we do <strong>not</strong> sell it.</p>
 <hr>
 <h2>5. Where Your Data Is Stored</h2>
-<ul><li><strong>On your device:</strong> by default, all of your data is stored locally using the device's app storage.</li><li><strong>In the cloud (optional):</strong> if you sign in and have Premium, your profiles, catalog items, custom categories, app settings, and catalog photos are backed up to our backend, which is hosted on <strong>Supabase</strong> (a third-party cloud infrastructure provider). Photos are stored in a private storage bucket and served to you through short-lived signed links. Data in transit is protected with encryption (HTTPS/TLS), and data at rest is protected by the hosting provider.</li></ul>
-<p>If you never sign in, no personal data leaves your device through the App.</p>
+<ul>
+<li><strong>On your device:</strong> by default, profiles, catalog, wishlist, try-on history, and most photos are stored locally using the device’s app storage.</li>
+<li><strong>Premium cloud backup (optional):</strong> if you sign in with Apple or Google and have Premium, your profiles, catalog items, custom categories, app settings, and catalog photos are backed up to our backend hosted on <strong>Supabase</strong>. Photos are stored in a private storage bucket and served through short-lived signed links.</li>
+<li><strong>Try-on and credits:</strong> credit balances and verified credit-purchase records are stored on our Supabase backend, tied to your technical (anonymous) session or Account. Try-on images are sent to our backend and to <strong>FASHN</strong> to produce a result; we do not keep a permanent cloud gallery of your try-on history (history stays on-device).</li>
+<li><strong>Profile share links (optional):</strong> shared profile payloads are stored on our backend until they expire or are removed under our retention rules.</li>
+</ul>
+<p>Data in transit is protected with encryption (HTTPS/TLS). Data at rest is protected by the relevant hosting or AI provider.</p>
+<p><strong>Important:</strong> even if you never create an Apple/Google Account in Settings, using try-on, buying credits, or using certain share features will send data off your device as described above.</p>
 <hr>
 <h2>6. Sharing and Sub-Processors</h2>
 <p>We do not sell or rent your personal information. We share information only with service providers that help us operate the App, and only as needed to provide it:</p>
-<div class="table-wrap"><table><thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead><tbody><tr><td><strong>Apple</strong></td><td>Sign in with Apple; App Store purchase &amp; receipt validation</td><td>Identity token, email/name, purchase transaction</td></tr><tr><td><strong>Google</strong></td><td>Sign in with Google; Google Play purchase validation</td><td>Identity token, email/name, purchase token</td></tr><tr><td><strong>Supabase</strong></td><td>Cloud database, authentication, file storage, and backend functions</td><td>Account, profile, catalog, photos, entitlement</td></tr></tbody></table></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead>
+<tbody>
+<tr><td><strong>Apple</strong></td><td>Sign in with Apple; App Store purchase &amp; receipt validation</td><td>Identity token, email/name (if provided), purchase transaction</td></tr>
+<tr><td><strong>Google</strong></td><td>Sign in with Google; Google Play purchase validation</td><td>Identity token, email/name (if provided), purchase token</td></tr>
+<tr><td><strong>Supabase</strong></td><td>Cloud database, authentication (including anonymous sessions), file storage, and backend functions</td><td>Account or technical session identifiers; Premium entitlement; credit balance &amp; purchase ledger; Premium sync data; profile shares; try-on request handling</td></tr>
+<tr><td><strong>FASHN</strong></td><td>AI virtual try-on image generation</td><td>Person and garment images you submit for a generate; generated result image returned to the App</td></tr>
+</tbody>
+</table></div>
 <p>Each provider processes data under its own privacy terms. We may also disclose information if required by law, to enforce our Terms, or to protect the rights, safety, and security of our users or the public.</p>
 <hr>
 <h2>7. Data Retention</h2>
-<ul><li><strong>Local data</strong> remains on your device until you delete it or uninstall the App.</li><li><strong>Cloud data</strong> is retained for as long as your account exists so that your backup stays available. When you delete your account (see below), your cloud data and stored photos are permanently removed.</li></ul>
+<ul>
+<li><strong>Local data</strong> remains on your device until you delete it or uninstall the App.</li>
+<li><strong>Premium cloud backup</strong> is retained for as long as your Account exists. When you delete your Account from Settings, associated cloud backup data and stored catalog photos are permanently removed.</li>
+<li><strong>Credit wallet and purchase ledger</strong> are retained while the related technical session or Account exists, so we can honor your balance and prevent double-granting of the same store transaction. Deleting your Account removes data tied to that Account; an anonymous session that is never linked may remain until cleaned up or deleted under our operational practices.</li>
+<li><strong>Try-on images in transit</strong> are processed to fulfill your request and are not kept by us as a long-term cloud try-on album. Providers may retain processing logs under their own policies for a limited time.</li>
+<li><strong>Shared profiles</strong> expire after a limited period (currently about 30 days) and then are no longer available via the link.</li>
+</ul>
 <hr>
 <h2>8. Your Rights and Choices</h2>
 <p>Depending on where you live, you may have rights to access, correct, export, or delete your personal data, and to object to or restrict certain processing.</p>
-<ul><li><strong>Access &amp; correction:</strong> your data is visible and editable directly in the App.</li><li><strong>Deletion:</strong> you can permanently delete your account and <strong>all</strong> associated cloud data and photos at any time from <strong>Settings → Account → Delete account</strong>. This cannot be undone. You can also remove local data by deleting items in the App or uninstalling it.</li><li><strong>Withdraw from cloud:</strong> simply sign out to stop syncing; your data remains on your device.</li><li><strong>Requests:</strong> to exercise any right, contact us at the address in Section 13. We will respond within the time required by applicable law.</li><li><strong>Complaint:</strong> if you are in the EEA or UK, you may lodge a complaint with your local data-protection authority. In Poland this is the President of the Personal Data Protection Office (UODO).</li></ul>
+<ul>
+<li><strong>Access &amp; correction:</strong> your data is visible and editable directly in the App.</li>
+<li><strong>Deletion:</strong> you can permanently delete your Account and associated cloud backup data from <strong>Settings → Account → Delete account</strong>. This cannot be undone. You can also remove local data by deleting items in the App or uninstalling it.</li>
+<li><strong>Withdraw from Premium sync:</strong> sign out to stop syncing; your data remains on your device.</li>
+<li><strong>Try-on / credits:</strong> simply stop using those features. Uninstalling the App removes local try-on history; server credit balance stays with the related session/Account until that identity is deleted or transferred as described above.</li>
+<li><strong>Requests:</strong> to exercise any right, contact us at the address in Section 13. We will respond within the time required by applicable law.</li>
+<li><strong>Complaint:</strong> if you are in the EEA or UK, you may lodge a complaint with your local data-protection authority. In Poland this is the President of the Personal Data Protection Office (UODO).</li>
+</ul>
 <hr>
 <h2>9. Security</h2>
-<p>We use reasonable technical and organizational measures to protect your information, including encryption in transit, private storage with signed access links, and access controls that ensure each account can only read its own data. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+<p>We use reasonable technical and organizational measures to protect your information, including encryption in transit, private storage with signed access links where applicable, server-side enforcement of credit spends for try-on, and access controls so that each Account can only read its own backup data. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
 <hr>
 <h2>10. Children's Privacy</h2>
 <p>MeSize is not directed to children under 13 (or the minimum age required in your country, such as 16 in parts of the EEA). We do not knowingly collect personal information from children under that age. If you believe a child has provided us personal information, contact us and we will delete it.</p>
 <hr>
 <h2>11. International Users</h2>
-<p>Your information may be processed and stored in countries other than your own, including where our hosting provider operates. Where required, we rely on appropriate safeguards for such transfers. By using the App, you understand your information may be transferred as described in this policy.</p>
+<p>Your information may be processed and stored in countries other than your own, including where Supabase and FASHN operate. Where required, we rely on appropriate safeguards for such transfers. By using the App, you understand your information may be transferred as described in this policy.</p>
 <hr>
 <h2>12. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last updated" date above and, for material changes, provide a more prominent notice within the App. Your continued use of the App after an update means you accept the revised policy.</p>

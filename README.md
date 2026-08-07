@@ -1,21 +1,11 @@
-# MeSize — Legal
+# Legal drafts (not live)
 
-Public legal pages for the **MeSize** mobile app, served with GitHub Pages.
+Ready-to-copy HTML for the hosted site:
 
-- **Privacy Policy** → [`/privacy.html`](https://verbytskyinazar.github.io/mesize-legal/privacy.html)
-- **Terms of Service** → [`/terms.html`](https://verbytskyinazar.github.io/mesize-legal/terms.html)
+https://github.com/verbytskyinazar/mesize-legal
 
-## Editing
+1. Copy `privacy.html` and `terms.html` into that repo (replace the live files).
+2. Commit and push — GitHub Pages updates.
+3. Optional: bump in-app notice that legal docs changed.
 
-Plain hand-written HTML — no build step:
-
-- `index.html`
-- `privacy.html`
-- `terms.html`
-
-Edit the wording directly in the HTML. Shared styling lives in `style.css`
-(one stylesheet linked by every page). Commit the changed files.
-
-## Contact
-
-verbytskyi.nazar@gmail.com
+Not legal advice — review before publishing.
