@@ -11,15 +11,16 @@
 <div class="container">
 <header><a href="./index.html">Me<span>Size</span></a></header>
 <h1>Privacy Policy</h1>
-<p><strong>App:</strong> MeSize <strong>Last updated:</strong> August 8, 2026</p>
+<p><strong>App:</strong> MeSize <strong>Last updated:</strong> August 17, 2026</p>
 <p>MeSize ("<strong>MeSize</strong>", "<strong>we</strong>", "<strong>us</strong>", or "<strong>our</strong>") built the MeSize mobile app (the "<strong>App</strong>") to help you save and organize your own clothing and shoe sizes, body measurements, and a personal catalog of the items you own, and to offer optional features such as cloud backup, sharing, and AI virtual try-on. This Privacy Policy explains what information the App handles, how it is used, and the choices you have.</p>
-<p>We designed MeSize to be <strong>private by default</strong>: your sizes, measurements, catalog, wishlist, and most photos stay on your device unless you use a feature that needs the network (for example Premium cloud sync, profile or item sharing, buying credits, or AI try-on).</p>
+<p>We designed MeSize to be <strong>private by default</strong>: your sizes, measurements, catalog, wishlist, try-on history, and photos stay on your device unless you use a feature that needs the network (for example Premium cloud sync, sharing a profile, item or wishlist, buying credits, or AI try-on).</p>
 <p>MeSize is operated by an independent individual developer based in Poland, not a registered company. Where this document says "we", it refers to that operator (the data controller), who you can reach at the contact address in Section 13.</p>
 <hr>
 <h2>1. Summary</h2>
 <ul>
 <li>The App works <strong>offline-first</strong>. Your sizes, measurements, catalog, wishlist, and try-on history are stored <strong>locally on your device</strong> by default.</li>
-<li>Creating an <strong>Account</strong> (Sign in with Apple or Google) is <strong>optional</strong> and is used to back up and sync your data across devices when you also have <strong>Premium</strong>.</li>
+<li>Creating an <strong>Account</strong> (Sign in with Apple or Google) is <strong>optional</strong> and is used to back up and sync your data across devices when you also have <strong>Premium</strong>. That backup includes your profiles, catalog, <strong>wishlist</strong>, and <strong>try-on history</strong>, together with their photos.</li>
+<li><strong>Measuring an item from a photo</strong> happens entirely on your device. The photo you take to measure with is never uploaded to us.</li>
 <li>If you use <strong>AI try-on</strong> or buy <strong>try-on credits</strong>, the App creates a silent technical session (anonymous authentication) so we can run the feature and keep a server-side credit balance. That is <strong>not</strong> the same as signing in with Apple or Google in Settings.</li>
 <li>When you run a try-on, the photos you choose are sent through our backend to a third-party AI provider (<strong>FASHN</strong>) to generate a result image.</li>
 <li>We use <strong>no third-party advertising, analytics, or tracking SDKs</strong>. We do <strong>not sell</strong> your personal data and we do <strong>not</strong> use it for advertising.</li>
@@ -31,10 +32,12 @@
 <ul>
 <li><strong>Size &amp; body profile:</strong> profile name, gender, build type, home country, preferred unit system (cm/in), body measurements you enter (such as chest, waist, foot, head, and finger), and the clothing/shoe sizes you save (US/EU/UK/JP).</li>
 <li><strong>Catalog items:</strong> the items you add, including brand, category, size, price text, notes, and any <strong>photos</strong> you attach.</li>
-<li><strong>Wishlist items</strong> (local): name, size, price, store details, notes, and photos you choose to save.</li>
+<li><strong>Wishlist items:</strong> name, size, price, store details, notes, and photos you choose to save.</li>
 <li><strong>Custom categories</strong> you create.</li>
 <li><strong>App preferences:</strong> theme, language, and onboarding status.</li>
 <li><strong>Try-on inputs you choose:</strong> a photo of a person and a garment photo (from your catalog or an upload) used only when you start a generate.</li>
+<li><strong>Measuring photos:</strong> when you measure an item from a photo, the photo and the corner points you place on the reference card are used on your device to work out a size. They are <strong>not</strong> sent to us or to any third party.</li>
+<li><strong>Shared items you receive:</strong> when you open a share link someone sends you, the item or wishlist it contains is saved to your <strong>Shared</strong> list on your device.</li>
 </ul>
 <h3>2.2 Account information (only if you sign in with Apple or Google)</h3>
 <ul>
@@ -56,25 +59,28 @@
 <ul>
 <li>When you tap generate, the App sends the selected person and garment images (processed as compressed images) to our backend, which forwards them to <strong>FASHN</strong> (a third-party virtual try-on provider) to create a result image.</li>
 <li>We debit one try-on credit on our servers when a generate starts; if the generate fails, that credit is refunded to your balance.</li>
-<li>The result image is returned to the App. <strong>Try-on history is stored only on your device</strong> (not uploaded to our cloud backup). We do not use your try-on photos for advertising or to train our own models.</li>
+<li>The result image is returned to the App and saved to your try-on history. <strong>That history stays on your device unless you have Premium and are signed in</strong> — in that case it is included in your cloud backup, and the result images are uploaded to a private storage bucket like your other photos (see Section 5). We do not use your try-on photos for advertising or to train our own models.</li>
 <li>FASHN processes images under its own terms and privacy practices. Do not use try-on with photos of other people unless you have the right to do so.</li>
 </ul>
 <h3>2.6 Sharing features (optional)</h3>
 <ul>
-<li>If you share a <strong>size profile</strong>, a copy of that profile may be uploaded to our backend and available via a secret link/token for a limited time.</li>
-<li>If you share a <strong>catalog item</strong> or <strong>wishlist</strong> content, the App uses your device’s system share sheet; what leaves the device depends on the app or channel you choose (for example Messages or email).</li>
+<li>If you share a <strong>size profile</strong>, a copy of that profile is uploaded to our backend and made available via a secret link/token for a limited time.</li>
+<li>If you share a <strong>catalog item</strong>, a <strong>wishlist item</strong>, or your <strong>whole wishlist</strong>, a copy of that content is likewise uploaded to our backend and reachable only through the secret token in the link. For single-item shares this copy <strong>includes a small photo thumbnail</strong> of the item, if it has a photo.</li>
+<li>Share links carry only that random token — no sizes, photos, or other content sit in the URL itself. The stored copy is not readable or listable without the token, and it expires automatically (see Section 7).</li>
+<li><strong>Anyone who has the link can view what you shared</strong>, for as long as it has not expired. Share links only with people you intend to see the content.</li>
+<li>You may also pass a link on through your device’s system share sheet (for example Messages or email); what happens after that depends on the app or channel you choose.</li>
 </ul>
 <h3>2.7 Information we do <strong>not</strong> collect</h3>
 <ul>
 <li>We do not collect your precise location.</li>
 <li>We do not use advertising identifiers or third-party trackers.</li>
-<li>We do not access your contacts, and we do not scan your photo library beyond the specific photos you choose for catalog, wishlist, or try-on.</li>
+<li>We do not access your contacts, and we do not scan your photo library beyond the specific photos you choose for catalog, wishlist, try-on, or measuring.</li>
 </ul>
 <hr>
 <h2>3. Device Permissions</h2>
 <ul>
 <li><strong>Photo library:</strong> requested when you pick an image for a catalog item, wishlist item, or try-on (person or clothes).</li>
-<li><strong>Camera:</strong> requested if you take a photo for those features or use camera-based measuring features.</li>
+<li><strong>Camera:</strong> requested if you take a photo for those features, scan a shared-profile QR code, or measure an item from a photo. Measuring runs entirely on your device.</li>
 <li><strong>Files / documents (where offered):</strong> requested if you import an image from files.</li>
 </ul>
 <p>You can change these permissions at any time in your device settings. Denying them only disables the related feature.</p>
@@ -95,13 +101,13 @@
 <hr>
 <h2>5. Where Your Data Is Stored</h2>
 <ul>
-<li><strong>On your device:</strong> by default, profiles, catalog, wishlist, try-on history, and most photos are stored locally using the device’s app storage.</li>
-<li><strong>Premium cloud backup (optional):</strong> if you sign in with Apple or Google and have Premium, your profiles, catalog items, custom categories, app settings, and catalog photos are backed up to our backend hosted on <strong>Supabase</strong>. Photos are stored in a private storage bucket and served through short-lived signed links.</li>
-<li><strong>Try-on and credits:</strong> credit balances and verified credit-purchase records are stored on our Supabase backend, tied to your technical (anonymous) session or Account. Try-on images are sent to our backend and to <strong>FASHN</strong> to produce a result; we do not keep a permanent cloud gallery of your try-on history (history stays on-device).</li>
-<li><strong>Profile share links (optional):</strong> shared profile payloads are stored on our backend until they expire or are removed under our retention rules.</li>
+<li><strong>On your device:</strong> by default, profiles, catalog, wishlist, try-on history, your <strong>Shared</strong> list of things others sent you, and all photos are stored locally using the device’s app storage. Your Shared list is always local — it is never uploaded, and removing something from it only removes your copy.</li>
+<li><strong>Premium cloud backup (optional):</strong> if you sign in with Apple or Google and have Premium, your profiles, catalog items, custom categories, app settings, <strong>wishlist items</strong>, and <strong>try-on history</strong> are backed up to our backend hosted on <strong>Supabase</strong>, along with their photos. Photos are stored in private storage buckets — separate buckets for catalog, wishlist, and try-on images — and served through short-lived signed links. Each Account can only read its own rows and its own photos.</li>
+<li><strong>Try-on and credits:</strong> credit balances and verified credit-purchase records are stored on our Supabase backend, tied to your technical (anonymous) session or Account. Try-on images are sent to our backend and to <strong>FASHN</strong> to produce a result. Without Premium and sign-in, the result stays only on your device; with them, it is part of your cloud backup as described above.</li>
+<li><strong>Share links (optional):</strong> shared profile, item, and wishlist payloads are stored on our backend until they expire or are removed under our retention rules. They are reachable only through the secret token in the link and cannot be listed or browsed.</li>
 </ul>
 <p>Data in transit is protected with encryption (HTTPS/TLS). Data at rest is protected by the relevant hosting or AI provider.</p>
-<p><strong>Important:</strong> even if you never create an Apple/Google Account in Settings, using try-on, buying credits, or using certain share features will send data off your device as described above.</p>
+<p><strong>Important:</strong> even if you never create an Apple/Google Account in Settings, using try-on, buying credits, or creating a share link will send data off your device as described above.</p>
 <hr>
 <h2>6. Sharing and Sub-Processors</h2>
 <p>We do not sell or rent your personal information. We share information only with service providers that help us operate the App, and only as needed to provide it:</p>
@@ -110,7 +116,7 @@
 <tbody>
 <tr><td><strong>Apple</strong></td><td>Sign in with Apple; App Store purchase &amp; receipt validation</td><td>Identity token, email/name (if provided), purchase transaction</td></tr>
 <tr><td><strong>Google</strong></td><td>Sign in with Google; Google Play purchase validation</td><td>Identity token, email/name (if provided), purchase token</td></tr>
-<tr><td><strong>Supabase</strong></td><td>Cloud database, authentication (including anonymous sessions), file storage, and backend functions</td><td>Account or technical session identifiers; Premium entitlement; credit balance &amp; purchase ledger; Premium sync data; profile shares; try-on request handling</td></tr>
+<tr><td><strong>Supabase</strong></td><td>Cloud database, authentication (including anonymous sessions), file storage, and backend functions</td><td>Account or technical session identifiers; Premium entitlement; credit balance &amp; purchase ledger; Premium sync data (profiles, catalog, wishlist, try-on history and their photos); profile, item and wishlist shares; try-on request handling</td></tr>
 <tr><td><strong>FASHN</strong></td><td>AI virtual try-on image generation</td><td>Person and garment images you submit for a generate; generated result image returned to the App</td></tr>
 </tbody>
 </table></div>
@@ -119,10 +125,10 @@
 <h2>7. Data Retention</h2>
 <ul>
 <li><strong>Local data</strong> remains on your device until you delete it or uninstall the App.</li>
-<li><strong>Premium cloud backup</strong> is retained for as long as your Account exists. When you delete your Account from Settings, associated cloud backup data and stored catalog photos are permanently removed.</li>
+<li><strong>Premium cloud backup</strong> is retained for as long as your Account exists. When you delete your Account from Settings, associated cloud backup data and all stored photos — catalog, wishlist, and try-on — are permanently removed.</li>
 <li><strong>Credit wallet and purchase ledger</strong> are retained while the related technical session or Account exists, so we can honor your balance and prevent double-granting of the same store transaction. Deleting your Account removes data tied to that Account; an anonymous session that is never linked may remain until cleaned up or deleted under our operational practices.</li>
-<li><strong>Try-on images in transit</strong> are processed to fulfill your request and are not kept by us as a long-term cloud try-on album. Providers may retain processing logs under their own policies for a limited time.</li>
-<li><strong>Shared profiles</strong> expire after a limited period (currently about 30 days) and then are no longer available via the link.</li>
+<li><strong>Try-on images</strong> are processed to fulfill your request. If you have Premium and are signed in, the result images are retained as part of your cloud backup until you delete the history entry or your Account; otherwise they are not kept by us. Providers may retain processing logs under their own policies for a limited time.</li>
+<li><strong>Shares</strong> — profiles, catalog items, wishlist items, and whole wishlists — expire after a limited period (currently about 30 days) and then are no longer available via the link.</li>
 </ul>
 <hr>
 <h2>8. Your Rights and Choices</h2>
@@ -131,7 +137,8 @@
 <li><strong>Access &amp; correction:</strong> your data is visible and editable directly in the App.</li>
 <li><strong>Deletion:</strong> you can permanently delete your Account and associated cloud backup data from <strong>Settings → Account → Delete account</strong>. This cannot be undone. You can also remove local data by deleting items in the App or uninstalling it.</li>
 <li><strong>Withdraw from Premium sync:</strong> sign out to stop syncing; your data remains on your device.</li>
-<li><strong>Try-on / credits:</strong> simply stop using those features. Uninstalling the App removes local try-on history; server credit balance stays with the related session/Account until that identity is deleted or transferred as described above.</li>
+<li><strong>Try-on / credits:</strong> simply stop using those features. Deleting a try-on history entry in the App removes it from your cloud backup too; uninstalling removes the local copy. Your server credit balance stays with the related session/Account until that identity is deleted or transferred as described above.</li>
+<li><strong>Shares:</strong> a share link stops working once it expires. Your <strong>Shared</strong> list is local, so removing an entry there removes your copy of it.</li>
 <li><strong>Requests:</strong> to exercise any right, contact us at the address in Section 13. We will respond within the time required by applicable law.</li>
 <li><strong>Complaint:</strong> if you are in the EEA or UK, you may lodge a complaint with your local data-protection authority. In Poland this is the President of the Personal Data Protection Office (UODO).</li>
 </ul>
